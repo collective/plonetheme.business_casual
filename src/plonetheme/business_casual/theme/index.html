@@ -1,172 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
-  <title>Starter Template for Bootstrap</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <title>Business Casual - Start Bootstrap Theme</title>
 
-  <style type="text/css">
-    html body {
-      /* Space for the bootstrap top navigation bar */
-      padding-top: 70px;
-    }
-    /* Top Navigation css adjustments */
-    .navbar .selected a {
-      color: #fff;
-      background: #080808;
-    }
-    /* Edit Bar css adjustments */
-    .nav-tabs .selected {
-      border-width: 1px;
-      border-style: solid;
-      border-color: #DDD #DDD transparent;
-      -moz-border-top-colors: none;
-      -moz-border-right-colors: none;
-      -moz-border-bottom-colors: none;
-      -moz-border-left-colors: none;
-      border-bottom: 1px solid #fff;
-    }
-    .nav-tabs .selected a {
-      margin-right: 0;
-    }
-    .pull-left, .pull-right {
-      width: 50%;
-    }
-    .pull-right > li {
-      float: right;
-      display: inline-block;
-    }
-    #contentMenuAddNew li a {
-      width: 100%;
-    }
-  </style>
+    <!-- Custom CSS -->
+    <link href="styles/main.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
 <body>
+  <!-- plone toolbar -->
+  <section id="portal-toolbar" ></section>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="outer-wrapper">
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Plone</a>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul id="navbar" class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              <span id="user-name">Username</span>
-              <span class="caret"></span>
-            </a>
-            <ul id="action-menu-content" class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
-
-  <div class="container">
-
-    <ol id="breadcrumbs" class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Library</a></li>
-      <li class="active">Data</li>
-    </ol>
-
-    <div class="row">
-      <div class="col-md-12 hidden-xs">
-        <ul id="contentViews" class="nav nav-tabs pull-left">
-          <li role="presentation" class="active"><a href="#">Contents</a></li>
-          <li role="presentation"><a href="#">Edit</a></li>
-          <li role="presentation"><a href="#">Sharing</a></li>
-        </ul>
-        <ul class="nav nav-tabs pull-right">
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-              <span id="currentWorkflowState">State</span>
-              <span class="caret"></span>
-            </a>
-            <ul id="contentMenuWorkflowState" class="dropdown-menu dropdown-menu-right" role="menu">
-              <li>
-                <a href="#">One</a>
-              </li>
-              <li>
-                <a href="#">Two</a>
-              </li>
-            </ul>
-          </li>
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-              Add new <span class="caret"></span>
-            </a>
-            <ul id="contentMenuAddNew" class="dropdown-menu dropdown-menu-right" role="menu">
-              <li>
-                <a href="#">One</a>
-              </li>
-              <li>
-                <a href="#">Two</a>
-              </li>
-            </ul>
-          </li>
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-              Display <span class="caret"></span>
-            </a>
-            <ul id="contentMenuDisplay" class="dropdown-menu dropdown-menu-right" role="menu">
-              <li>
-                <a href="#">One</a>
-              </li>
-              <li>
-                <a href="#">Two</a>
-              </li>
-            </ul>
-          </li>
-
-        </ul>
-      </div>
-
+      <div id="anonymous-actions"></div>
     </div>
 
-    <div class="row">
-      <div id="content" class="col-md-12">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    <div class="brand">
+      <div class="brand-logo">Site Title</div>
+    </div>
+    <div class="address-bar">
+      <div class="brand-slogan">Slogan or address</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div id="above-content-wrapper">
+      <div id="above-content">
       </div>
     </div>
 
-    <footer>
-      <p>&copy; Company 2016</p>
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12 text-center">
+                    <div id="carousel-example-generic" class="carousel slide"></div>
+                    <div id="site-banner"></div>
+                    <h2 class="brand-before">
+                        <small>Welcome to</small>
+                    </h2>
+                    <h1 class="brand-name">Business Casual</h1>
+                    <hr class="tagline-divider">
+                    <h2>
+                        <small>By
+                            <strong>Start Bootstrap</strong>
+                        </small>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+          <div class="row">
+            <aside id="global_statusmessage">
+            </aside>
+          </div>
+          <main id="main-container" class="row row-offcanvas row-offcanvas-right">
+            <div id="column1-container">
+            </div>
+            <div id="content-container">
+              <div id="content"></div>
+            </div>
+            <div id="column2-container">
+            </div>
+          </main>
+        </div>
+
+    </div>
+  </div>
+    <!-- /.container -->
+
+    <footer id="portal-footer-wrapper">
     </footer>
 
-  </div><!-- /.container -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="scripts/bootstrap.min.js"></script>
 
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src="scripts/main.js"></script>
 
 </body>
+
 </html>
