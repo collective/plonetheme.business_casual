@@ -70,8 +70,8 @@
   <!-- dynamic slider content only for addon -->
   <replace
     if="$is_zip"
-    css:theme="#carousel-example-generic"
-    css:content="#carousel-example-generic"
+    css:theme="#slider"
+    css:content="#slider"
     href="/slider-images/@@slider-images"
     />
 
@@ -83,13 +83,13 @@
 
   <!-- front-page wrap -->
   <drop
-    css:theme="#carousel-example-generic"
+    css:theme="#slider"
     css:if-not-content=".section-front-page" />
   <drop
-    css:theme="#carousel-example-generic"
+    css:theme="#slider"
     css:if-content=".template-edit" />
   <drop
-    css:theme="#carousel-example-generic"
+    css:theme="#slider"
     css:if-content=".template-topbar-manage-portlets" />
 
   <drop
@@ -101,6 +101,10 @@
   <drop
     css:theme="#site-banner"
     css:if-content=".template-topbar-manage-portlets" />
+
+  <drop
+    css:content="#portal-breadcrumbs"
+    css:if-content=".section-front-page" />
 
   <!-- Portal-searchbox -->
   <replace
@@ -119,6 +123,14 @@
       <i class="icon-search"></i>
     </button>
   </replace> -->
+
+  <before css:content=".documentFirstHeading">
+    <hr/>
+  </before>
+
+  <after css:content=".documentFirstHeading">
+    <hr/>
+  </after>
 
   <!-- login link -->
   <after
@@ -164,7 +176,7 @@
         </div>
       </div>
       <section id="viewlet-below-content-body" class="row">
-        <div class="box">
+        <div class="">
           <div class="col-xs-12 col-sm-12">
             <xsl:copy-of css:select="#viewlet-below-content" />
           </div>

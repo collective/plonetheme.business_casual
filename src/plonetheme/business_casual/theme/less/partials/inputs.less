@@ -1,0 +1,86 @@
+/* ==========================================================================
+   INPUTS
+   ========================================================================== */
+
+
+
+input[type='text'],
+input[type='password'],
+textarea,
+input[type='number']{
+
+    height: 40px;
+    color: @brand-darker;
+    box-shadow: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    border: 2px solid @brand-gray;
+
+    &:hover{
+        background-color: @brand-lighter;
+    }
+
+    &:focus,
+    &:active{
+        background-color: @white;
+        color: @brand-darker;
+        outline: 0;
+        border: 2px solid @brand-primary;
+        box-shadow: none;
+
+    }
+}
+
+.field{
+
+    &.error{
+
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+
+        div:not([class="formHelp"]){
+            color: @error;
+        }
+
+        label{
+            color: @error;
+        }
+
+        input{
+            background-color: fade(@error, 30%);
+
+            &:focus{
+                background-color: @white;
+            }
+        }
+    }
+}
+
+.pat-resourceregistry .input-sm{
+
+    border-radius: 0 !important;
+    background-color: @brand-lighter !important;
+    color: contrast(@brand-lighter) !important;
+    outline: 1px solid @brand-gray !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    margin-bottom: 4px !important;
+
+    &:focus,
+    &:active{
+
+        background-color: @white !important;
+        color: @brand-darker !important;
+        outline: 2px solid @brand-gray !important;
+        box-shadow: none !important;
+        font-weight: 500;
+    }
+}
+
+
+.label{
+    color: @brand-darker;
+}

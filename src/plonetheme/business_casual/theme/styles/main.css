@@ -11625,4 +11625,41 @@ footer p {
 }
 /* Import Partial less files
    ========================================================================== */
+/* ==========================================================================
+   Base styling
+   ========================================================================== */
+h1,
+h2,
+h3 {
+  margin-top: 50px;
+  letter-spacing: 1px;
+}
+ul li,
+ol li,
+dt,
+dd,
+heading {
+  font-size: 1.25em;
+  line-height: 1.6;
+  color: #000;
+}
+li li {
+  font-size: 1em;
+}
+.documentFirstHeading {
+  text-align: center;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: 30px;
+}
+.discreet {
+  font-weight: 400 !important;
+}
+/* ==========================================================================
+   BREADCRUMBS
+   ========================================================================== */
+.plone-breadcrumb {
+  margin-top: 0;
+  box-shadow: 0px 2px 4px rgba(204, 204, 204, 0.31);
+}
 /*# sourceMappingURL=++theme++business_casual/less/business_casual-compiled.css.map */
