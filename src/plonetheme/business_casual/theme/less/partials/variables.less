@@ -10,40 +10,39 @@
 @font-opensans:   "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 
 /* Colors */
-@brand-primary: #f39c12 ;
 @white:         #fff;
 @black:         #000;
-@brand-darker:  #444;
-@brand-gray:    #ccc;
-@brand-lighter: #e9e9e9;
+@black-light:   #1b1c1d;
+@gray-darker:   #444;
+@gray:          #999999;
+@gray-light:    #cccccc;
 
 /* text */
-@text-primary:  @brand-primary;
-@text-success:  #6FDD91;
-@text-info:     #31708f;
-@text-warning:  #8a6d3b;
-@text-error:    #EC706B;
+@text-success:  #42a35a;
+@text-info:     #3085d6;
+@text-warning:  #644405;
+@text-error:    #ca3838;
 
 /* Background colors */
-@bg-body:           @white;
-@bg-footer:         @white;
-@bg-portlet-header: @brand-lighter;
+@bg-body:           fade(@white, 90%);
+@bg-footer:         fade(@white, 90%);
+@bg-portlet-header: @white;
 
 /* Font colors */
-@color-headings:        @black;
-@color-link:            darken(@brand-primary, 0%);
-@color-link-hover:      darken(@brand-primary, 20%);
 @color-portlet-header:  @black;
 @color-portlet-link:    @black;
+@color-base-link:       #337ab7;
+@color-base-link-hover:       #23527c;
+
 
 /* alert */
 @info:              @text-info;
-@warning:           @text-warning;
+@warning:           #f6b83f;
 @error:             @text-error;
 @success:           @text-success;
 
 /* buttons */
 @button-context:           @success;
-@button-standalone:        @brand-primary;
+@button-standalone:        @black;
 @button-destructive:       @error;
-@button-default:           @brand-lighter;
+@button-default:           @black-light;

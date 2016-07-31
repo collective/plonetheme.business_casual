@@ -15,7 +15,7 @@ aside {
 
         margin-bottom: 20px;
         border: none;
-        // box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
         border-radius: 0;
 
         /* portlet header */
@@ -23,10 +23,10 @@ aside {
 
             font-size: 16px;
             letter-spacing: 1px;
-            text-transform: uppercase;
             color: @color-portlet-header;
-            background: @white;
+            background: @bg-body;
             padding: 5px;
+            text-align: center;
             // border-bottom: 2px solid @black;
 
             a{
@@ -36,7 +36,7 @@ aside {
                 &:hover,
                 &:focus{
 
-                    color: @brand-darker;
+                    color: @gray-darker;
                     text-decoration: none;
                 }
             }
@@ -46,6 +46,7 @@ aside {
         .portletContent{
 
             border-top: 0;
+            padding: 0 5px;
         }
 
         .portletItem{
@@ -53,7 +54,7 @@ aside {
             a{
                 color: @color-portlet-link;
                 padding: 10px 5px 25px 5px;
-                font-family: @font-montserrat;
+                font-family: @font-opensans;
                 font-size: 15px;
                 line-height: 1.5;
 
@@ -67,7 +68,7 @@ aside {
                 &:hover,
                 &:focus{
 
-                    color: @brand-primary;
+                    color: @black;
                     text-decoration: none;
                 }
             }
@@ -79,7 +80,7 @@ aside {
         }
 
         .portletFooter{
-            font-family: @font-montserrat;
+            font-family: @font-opensans;
         }
     }
 }
@@ -113,13 +114,6 @@ aside{
                             margin-top: 0;
                             color: @color-portlet-link;
                         }
-
-                        // &:hover,
-                        // &:focus{
-
-                        //     color: @brand-primary;
-                        //     text-decoration: none;
-                        // }
                     }
                 }
             }
@@ -140,7 +134,7 @@ aside{
 
     .portletContent{
 
-        background-color: transparent;
+        background-color: @bg-body;
 
         ul.navTree{
 
@@ -151,14 +145,13 @@ aside{
                 a{
                     background-color: transparent;
                     font-size: 16px;
-                    font-family: @font-montserrat;
-                    text-transform: uppercase;
+                    font-family: @font-opensans;
                     color: @color-portlet-link;
 
                     &:hover,
                     &:focus{
 
-                        color: @brand-primary;
+                        color: @black;
                         text-decoration: none;
                         // font-weight: 700;
                     }
@@ -174,6 +167,16 @@ aside{
     }
 }
 
+// site setup icons color
+.configlets{
+
+    [class^="icon-"]:before,
+    [class*=" icon-"]:before{
+
+        color: @text-info;
+    }
+}
+
 
 
 
@@ -185,29 +188,6 @@ aside{
     form{
 
         padding: 5px !important;
-
-        input[type="text"]{
-            height: 40px;
-            background-color: @white;
-            color: @brand-darker;
-            box-shadow: none;
-            font-size: 16px;
-            border-radius: 5px;
-            outline: 0;
-            border: 2px solid @brand-gray;
-
-            &:hover{
-                background-color: @brand-lighter;
-            }
-
-            &:focus{
-                background-color: @white;
-                color: @brand-darker;
-                border: 2px solid @brand-primary;
-                box-shadow: none;
-
-            }
-        }
     }
 
     .searchField.portlet-search-gadget+.searchButton{
@@ -257,7 +237,7 @@ aside{
 
 .managedPortlet .portletHeader > a{
 
-    color: @brand-darker;
+    color: @gray-darker;
     font-weight: 400;
 }
 
@@ -268,16 +248,18 @@ aside{
 
 #portlet-prefs ul ul li{
 
-    font-family: @font-montserrat ;
+    font-family: @font-opensans ;
 
     a:before{
-        color: @brand-primary;
-        margin-top: 0;
+        color: @black-light;
+        margin-top: -9px;
     }
 
     a:hover,
     a:focus,
     a:active{
-        font-weight: 700;
+        // font-weight: 700;
+        padding-left: 45px;
+        background-color: @white;
     }
 }

@@ -11,59 +11,59 @@
     text-shadow: none;
 
     &.info{
-        background-color: @white;
-        color: @info;
+        background-color: fadeout(@info, 10%);
+        color: @white;
         font-weight: 500;
         border:0;
         border: 2px solid @info;
         border-radius: 10px;
 
         dt, strong{
-            color: @info;
+            color: @white;
         }
 
         > strong:before,
         > dt:before{
 
-        background-color: @info;
+        background-color: @white;
         }
     }
 
     &.warning{
-        background-color: @white;
-        color: @warning;
+        background-color: fadeout(@warning, 10%);
+        color: @text-warning;
         font-weight: 500;
         border:0;
         border: 2px solid @warning;
         border-radius: 10px;
 
         dt, strong{
-            color: @warning;
+            color: @text-warning;
         }
 
         > strong:before,
         > dt:before{
 
-        background-color: @warning;
+        background-color: @white;
         }
     }
 
     &.error{
-        background-color: @white;
-        color: @error;
+        background-color: fadeout(@error, 10%);
+        color: @white;
         font-weight: 500;
         border:0;
         border: 2px solid @error;
         border-radius: 10px;
 
         dt, strong{
-            color: @error;
+            color: @white;
         }
 
         > strong:before,
         > dt:before{
 
-        background-color: @error;
+        background-color: @white;
         }
     }
 }

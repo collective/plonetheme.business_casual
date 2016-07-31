@@ -13,8 +13,7 @@ h1, h2, h3{
     letter-spacing: 1px;
 }
 
-
-ul li, ol li, dt, dd, heading{
+ul:not(.plone-toolbar-main) li, ol li, dt, dd, heading{
 
     font-size: 1.25em;
     line-height: 1.6;
@@ -36,4 +35,20 @@ li li{
 .discreet{
 
     font-weight: 400 !important;
+}
+
+.label{
+
+    color: @black;
+}
+
+// remove https link glyph
+i.link-https:after{
+    content: "" !important;
+}
+
+// stop image overflow
+figure.image-product img{
+    width: 100%;
+    height: 100%;
 }

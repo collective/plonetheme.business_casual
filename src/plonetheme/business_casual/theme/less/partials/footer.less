@@ -9,10 +9,20 @@
 #portal-footer-wrapper{
 
     background-color: @bg-footer;
-    color: @brand-darker;
+    color: @gray-darker;
+
+    a{
+        color: @color-base-link !important;
+
+        &:hover,
+        &:focus,
+        &:active{
+            color: @color-base-link-hover !important;
+        }
+    }
 
     abbr{
-        color: @brand-darker;
+        color: @gray-darker;
     }
 
     .portletWrapper {
@@ -21,7 +31,6 @@
 
         &:first-child{
 
-            border-top: 1px dotted @brand-darker;
             border-bottom: 0;
             padding-top: 1.5em;
         }
@@ -37,10 +46,6 @@
         .portletContent{
             text-align: center;
             border-top: 0;
-
-            a{
-                color: @color-link;
-            }
 
             >*{
                 padding: 0;
