@@ -11649,6 +11649,11 @@ footer p {
 /* ==========================================================================
    Base styling
    ========================================================================== */
+@media (max-width: 767px) {
+  body {
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
 h1,
 h2,
 h3 {
@@ -11676,15 +11681,101 @@ li li {
 .discreet {
   font-weight: 400 !important;
 }
-.label {
-  color: #000;
-}
 i.link-https:after {
   content: "" !important;
 }
 figure.image-product img {
   width: 100%;
   height: 100%;
+}
+/* ==========================================================================
+   SEARCH PAGE and LIVE SEARCH
+   ========================================================================== */
+.search-box #portal-searchbox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.search-box #portal-searchbox .search-icon {
+  padding: 9px;
+}
+.search-box #portal-searchbox .searchSection {
+  color: #fff;
+}
+/* Moblie live search
+   ========================================================================== */
+.mobile-live-search #portal-searchbox {
+  float: none;
+  position: absolute;
+  top: 25px;
+  right: 70px;
+  margin-top: -5px;
+  padding-top: 0;
+}
+.mobile-live-search #portal-searchbox .pat-livesearch {
+  min-width: 100px;
+}
+.mobile-live-search .LSBox .searchField {
+  height: 30px;
+  background: #fff;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 14px;
+  width: 100px;
+  transition-property: width;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+.mobile-live-search .LSBox .searchField:focus {
+  background-color: #fff;
+  border-bottom: none !important;
+  width: 85vw;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  margin-top: -10px;
+  padding: 26px 20px;
+}
+.mobile-live-search .LSBox label {
+  color: #999999;
+}
+.mobile-live-search .LSBox .livesearch-results {
+  border: 0px !important;
+  box-shadow: none !important;
+  width: 100vw !important;
+  margin-top: -1px;
+}
+.mobile-live-search .LSBox .livesearch-results li {
+  text-transform: none;
+}
+.mobile-live-search .LSBox .livesearch-results li.no-search {
+  display: none !important;
+}
+.mobile-live-search .LSBox .livesearch-results h4 {
+  margin-top: 0;
+}
+.mobile-live-search .LSBox .livesearch-results h4 a {
+  font-weight: 400;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.mobile-live-search .LSBox .livesearch-results p {
+  margin: 0;
+}
+.mobile-live-search .LSBox input[type="text"]:focus {
+  border: 0;
+  box-shadow: none;
+}
+.searchPage .actionMenu dd {
+  z-index: 2;
+}
+input[type="submit"].searchPage {
+  padding: 8px;
+  font-size: 17px;
+}
+#searchform .input-group input.searchPage.btn {
+  margin-top: -2px;
 }
 /* ==========================================================================
    PORTLETS
@@ -11851,6 +11942,29 @@ aside .portletRecent section.portletContent ul li a:before {
   background-color: #fff;
 }
 /* ==========================================================================
+   INPUTS
+   ========================================================================== */
+.field.error {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.field.error div:not([class="formHelp"]) {
+  color: #ca3838;
+}
+.field.error label {
+  color: #ca3838;
+}
+.field.error input {
+  background-color: rgba(202, 56, 56, 0.3);
+}
+.field.error input:focus {
+  background-color: #fff;
+}
+.label {
+  color: #000;
+}
+/* ==========================================================================
    BUTTONS
    ========================================================================== */
 /* Type: Submit
@@ -11946,7 +12060,7 @@ input[type="button"]:focus {
 }
 .portalMessage.info > strong:before,
 .portalMessage.info > dt:before {
-  background-color: #fff;
+  background-color: #236bb0;
 }
 .portalMessage.warning {
   background-color: rgba(246, 184, 63, 0.9);
@@ -11962,7 +12076,7 @@ input[type="button"]:focus {
 }
 .portalMessage.warning > strong:before,
 .portalMessage.warning > dt:before {
-  background-color: #fff;
+  background-color: #f4a60e;
 }
 .portalMessage.error {
   background-color: rgba(202, 56, 56, 0.9);
@@ -11978,7 +12092,7 @@ input[type="button"]:focus {
 }
 .portalMessage.error > strong:before,
 .portalMessage.error > dt:before {
-  background-color: #fff;
+  background-color: #a32c2c;
 }
 /* ==========================================================================
    BREADCRUMBS

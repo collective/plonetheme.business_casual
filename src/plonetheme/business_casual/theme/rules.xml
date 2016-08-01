@@ -118,11 +118,11 @@
     </button>
   </replace>
 
- <!--  <replace css:content="div.mobile-live-search #portal-searchbox input.searchButton">
+  <replace css:content="div.mobile-live-search #portal-searchbox input.searchButton">
     <button class="search-icon">
       <i class="icon-search"></i>
     </button>
-  </replace> -->
+  </replace>
 
   <before css:content=".documentFirstHeading">
     <hr/>

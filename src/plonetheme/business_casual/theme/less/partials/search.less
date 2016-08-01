@@ -5,81 +5,25 @@
 
 
 
-.nav {
+.search-box{
 
     #portal-searchbox{
-        float: none;
-        margin-top: 16px;
-        max-height: 55px;
 
-        .pat-livesearch{
+        position: absolute;
+        top: 10px;
+        right: 10px;
 
-            .LSBox{
+        .search-icon{
 
-                .searchField{
+            padding: 9px;
+        }
 
-                    font-family: @font-montserrat;
-                    font-size: 14px;
-                    height: 36px;
-                    border-radius: 5px 0 0 5px !important;
-                }
+        .searchSection{
 
-                button.search-icon{
-
-                    padding: 6px;
-                    color: @black;
-                    background-color: @white;
-                    border: 2px solid @brand-gray;
-                    border-radius: 0 5px 5px 0;
-
-                    &:hover,
-                    &:focus,
-                    &:active{
-                        box-shadow: none;
-                        border-color: @brand-primary;
-                        color: @brand-primary;
-                        transition: 0.5s ;
-                    }
-                }
-
-                .searchSection{
-
-                    position: relative;
-                    visibility: hidden;
-                    top: -20px;
-                }
-                .show-searchSection{
-                    visibility: visible !important;
-                    top: -4px !important;
-                }
-
-                .livesearch-results{
-                    border: 0px !important;
-                    box-shadow: none !important;
-
-                    li{
-                        text-transform: none;
-                    }
-
-                    h4{
-                        margin-top: 0;
-
-                        a{
-                            font-weight: 400;
-                            font-family: @font-montserrat;
-                        }
-                    }
-
-                    p{
-                        margin: 0;
-                    }
-                }
-
-            }
+            color: @white;
         }
     }
 }
-
 
 /* Moblie live search
    ========================================================================== */
@@ -108,10 +52,10 @@
             outline: 0;
             border: 0;
             box-shadow: none;
-            border-bottom: 1px solid @brand-darker;
+            // border-bottom: 1px solid @brand-darker;
             border-radius: 0;
             font-size: 14px;
-            color: @brand-darker;
+            // color: @brand-darker;
             width: 100px;
             transition-property: width;
             transition-duration: 200ms;
@@ -131,7 +75,7 @@
 
         label{
 
-            color: @brand-gray;
+            color: @gray;
         }
 
 
@@ -153,7 +97,7 @@
 
                 a{
                     font-weight: 400;
-                    font-family: @font-montserrat;
+                    font-family: @font-opensans;
                 }
             }
 
@@ -176,4 +120,9 @@
 input[type="submit"].searchPage{
     padding: 8px;
     font-size: 17px;
+}
+
+#searchform .input-group input.searchPage.btn{
+
+    margin-top: -2px;
 }
