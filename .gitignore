@@ -18,6 +18,7 @@ src/*
 test.plone_addon/
 var/
 node_modules/
+dist/
 # files
 lib64
 log.html
