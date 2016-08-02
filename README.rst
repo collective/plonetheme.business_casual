@@ -3,42 +3,27 @@
    This text does not appear on pypi or github. It is a comment.
 
 ==============================================================================
-plonetheme.business_casual
+Business Casual
 ==============================================================================
 
-Tell me what your product does
+Business Casual is a full website template for Plone.
 
-Features
---------
-
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
-
+.. image:: https://raw.githubusercontent.com/vikas-parashar/plonetheme.business_casual/master/preview.png
 
 Installation
 ------------
 
-Install plonetheme.business_casual by adding it to your buildout::
+Zip
+~~~~~~~~
+In zip version you don't get the slider but only a static banner due to limitations.
+
+#. Download the `zip file`_
+#. Import the theme from the Diazo theme control panel.
+
+Buildout
+~~~~~~~~
+
+Install ``plonetheme.business_casual`` by adding it to your buildout::
 
     [buildout]
 
@@ -51,22 +36,30 @@ Install plonetheme.business_casual by adding it to your buildout::
 and then running ``bin/buildout``
 
 
-Contribute
-----------
+Demo
+~~~~
 
-- Issue Tracker: https://github.com/collective/plonetheme.business_casual/issues
-- Source Code: https://github.com/collective/plonetheme.business_casual
-- Documentation: https://docs.plone.org/foo/bar
+   This theme can be seen in action at the following site:
 
+-  `Business Casual Theme Demo`_
 
-Support
--------
+Documentation
+-------------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
-
+Full documentation for end users can be found `here`_
 
 License
 -------
 
-The project is licensed under the GPLv2.
+MIT License
+
+Credit
+------
+
+Based on `Business Casual`_ Provided by `Start Bootstrap`_
+
+.. _zip file: https://github.com/vikas-parashar/plonetheme.business_casual/blob/master/plonetheme.business_casual.zip?raw=true
+.. _Business Casual Theme Demo: http://107.170.136.197:8080/business-casual
+.. _Business Casual: https://startbootstrap.com/template-overviews/business-casual/
+.. _Start Bootstrap: https://startbootstrap.com
+.. _here: https://github.com/vikas-parashar/plonetheme.business_casual/blob/master/docs/index.rst

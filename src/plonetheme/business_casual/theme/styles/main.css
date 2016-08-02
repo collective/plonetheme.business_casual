@@ -11681,6 +11681,12 @@ li li {
 .discreet {
   font-weight: 400 !important;
 }
+.banner {
+  background-image: url('../images/slide-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 530px !important;
+}
 i.link-https:after {
   content: "" !important;
 }
