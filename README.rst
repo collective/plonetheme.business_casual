@@ -48,6 +48,18 @@ Documentation
 
 Full documentation for end users can be found `here`_
 
+Contribution
+-------------
+
+- Clone the repo.
+- Run ``bin/buildout``
+- next, install the local dependencies theme requires
+    ``$ npm install``
+- Watch For Changes & Automatically Refresh
+    ``$ grunt watch``
+- Build & Optimize(This will create a ``dist`` folder with optimized files and a zip of theme)
+    ``$ grunt dist``
+
 License
 -------
 
