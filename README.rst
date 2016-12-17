@@ -66,3 +66,14 @@ Based on `Business Casual`_ Provided by `Start Bootstrap`_
 .. _Business Casual: https://startbootstrap.com/template-overviews/business-casual/
 .. _Start Bootstrap: https://startbootstrap.com
 .. _here: https://github.com/collective/plonetheme.business_casual/blob/master/docs/index.rst
+
+Screenshots
+-----------
+
+Full size screenshot:
+
+.. image:: https://raw.githubusercontent.com/collective/plonetheme.business_casual/master/docs/plonetheme.business_casual-screenshot.jpg
+
+iPhone Plus screenshot:
+
+.. image:: https://raw.githubusercontent.com/collective/plonetheme.business_casual/master/docs/plonetheme.business_casual-screenshot-iphone-plus.jpg
