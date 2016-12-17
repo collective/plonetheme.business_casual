@@ -8,7 +8,7 @@ Business Casual
 
 Business Casual is a full website template for Plone.
 
-.. image:: https://raw.githubusercontent.com/vikas-parashar/plonetheme.business_casual/master/preview.png
+.. image:: https://raw.githubusercontent.com/collective/plonetheme.business_casual/master/preview.png
 
 Installation
 ------------
@@ -34,14 +34,6 @@ Install ``plonetheme.business_casual`` by adding it to your buildout::
 
 
 and then running ``bin/buildout``
-
-
-Demo
-~~~~
-
-   This theme can be seen in action at the following site:
-
--  `Business Casual Theme Demo`_
 
 Documentation
 -------------
@@ -70,8 +62,7 @@ Credit
 
 Based on `Business Casual`_ Provided by `Start Bootstrap`_
 
-.. _zip file: https://github.com/vikas-parashar/plonetheme.business_casual/blob/master/plonetheme.business_casual.zip?raw=true
-.. _Business Casual Theme Demo: http://107.170.136.197:8080/business-casual
+.. _zip file: https://github.com/collective/plonetheme.business_casual/blob/master/plonetheme.business_casual.zip?raw=true
 .. _Business Casual: https://startbootstrap.com/template-overviews/business-casual/
 .. _Start Bootstrap: https://startbootstrap.com
-.. _here: https://github.com/vikas-parashar/plonetheme.business_casual/blob/master/docs/index.rst
+.. _here: https://github.com/collective/plonetheme.business_casual/blob/master/docs/index.rst
