@@ -10,6 +10,8 @@ Business Casual is a full website template for Plone.
 
 .. image:: https://raw.githubusercontent.com/collective/plonetheme.business_casual/master/preview.png
 
+See additional screenshots below.
+
 Installation
 ------------
 
