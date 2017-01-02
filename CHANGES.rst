@@ -2,10 +2,11 @@ Changelog
 ~~~~~~~~~
 
 
-1.0a2 (unreleased)
-------------------
+1.0 (2017-01-02)
+----------------
 
-- Nothing changed yet.
+- updated docs, pypi classifier
+  [tkimnguyen]
 
 
 1.0a1 (2016-08-02)
