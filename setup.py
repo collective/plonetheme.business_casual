@@ -14,13 +14,14 @@ long_description = '\n\n'.join([
 setup(
     name='plonetheme.business_casual',
     version='1.0a2.dev0',
-    description="A theme for Plone 5",
+    description="A theme for Plone 5.x",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
         "Framework :: Plone :: 5.0",
+        "Framework :: Plone :: 5.1",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
         "Operating System :: OS Independent",
@@ -29,7 +30,7 @@ setup(
     keywords='Python Plone',
     author='Vikas Parashar',
     author_email='svnitvikas@gmail.com',
-    url='https://pypi.python.org/pypi/plonetheme.business_casual',
+    url='https://github.com/collective/plonetheme.business_casual',
     license='GPL version 2',
     packages=find_packages('src', exclude=['ez_setup']),
     namespace_packages=['plonetheme'],
