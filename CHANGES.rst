@@ -2,10 +2,11 @@ Changelog
 ~~~~~~~~~
 
 
-1.1 (unreleased)
+1.1 (2017-11-20)
 ----------------
 
-- Nothing changed yet.
+- add Framework :: Plone :: Theme classifier
+  [tkimnguyen]
 
 
 1.0 (2017-01-02)
